@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import { useEffect, ReactNode } from 'react';
 import styles from './InfoPanel.module.css';
 
 interface InfoPanelProps {
   isOpen: boolean;
   onClose: () => void;
   title: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export function InfoPanel({ isOpen, onClose, title, children }: InfoPanelProps) {

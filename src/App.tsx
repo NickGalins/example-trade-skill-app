@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Header } from './components/Header';
 import { Loading } from './components/Loading';
 import { HomeScreen } from './screens/HomeScreen';
@@ -11,7 +11,6 @@ import {
   EventPlayerInfo,
   MiningSkillInfo,
   MineCard,
-  Modifiers,
 } from './types';
 import { calculateAllValues } from './utils/calculations';
 import { rollMineType, rollUsesRemaining, generateRandomDigits } from './utils/probabilities';
