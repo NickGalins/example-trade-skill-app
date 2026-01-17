@@ -76,16 +76,19 @@ export function MiningSkillModifiersScreen({
   const handleModifierToggle = (modifierKey: keyof Modifiers) => {
     const newModifiers = { ...data.modifiers };
 
-    // If toggling "No modifiers", disable all others
+    // If toggling "No modifiers"
     if (modifierKey === 'noModifiers') {
       if (!newModifiers.noModifiers) {
-        // Turning on "No modifiers" - disable all
+        // Turning on "No modifiers" - disable all others
         Object.keys(newModifiers).forEach((key) => {
           newModifiers[key as keyof Modifiers] = key === 'noModifiers';
         });
+      } else {
+        // Turning off "No modifiers" - just toggle it
+        newModifiers.noModifiers = false;
       }
     } else {
-      // Toggling a specific modifier - turn off "No modifiers"
+      // Toggling a specific modifier - turn off "No modifiers" and toggle this one
       newModifiers.noModifiers = false;
       newModifiers[modifierKey] = !newModifiers[modifierKey];
     }
