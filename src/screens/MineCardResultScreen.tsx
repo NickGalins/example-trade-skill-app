@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Button } from '../components/Button';
 import { MineCard as MineCardComponent } from '../components/MineCard';
 import { MineCard } from '../types';

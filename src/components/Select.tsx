@@ -1,4 +1,4 @@
-import React from 'react';
+import { ChangeEvent } from 'react';
 import styles from './Select.module.css';
 
 interface SelectOption {
@@ -25,7 +25,7 @@ export function Select({
   error,
   tip,
 }: SelectProps) {
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const selectedValue = e.target.value;
     if (selectedValue === '') {
       onChange(null);
