@@ -55,8 +55,8 @@ export function EventPlayerInfoScreen({
         <h1 className={styles.flowTitle}>Open a Mine</h1>
         <p className={styles.flowDescription}>
           You can use this flow to automatically generate a Mine card for a player.
-          It takes 15 minutes for the mine to open, but modifiers can reduce this
-          time. The result shouldn't be revealed to the player until the mine opens.
+          <br />• It takes 15 minutes for the mine to open, but modifiers can reduce this time.
+          <br />• The result shouldn't be revealed to the player until the mine opens.
         </p>
       </div>
 
