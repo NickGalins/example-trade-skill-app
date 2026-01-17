@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '../components/Button';
 import { Select } from '../components/Select';
 import { ToggleSwitch } from '../components/ToggleSwitch';
